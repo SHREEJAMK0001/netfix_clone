@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    /*Margin is the space outside an element's border.*/
+    padding: 0;
+    /*Padding is the space between the content of an element and its border.*/
+    box-sizing: border-box;
+    /**/
+    font-family: 'montserrat', sans-serif;
+    /**/
+}
+
+/* * selects everything in our page/**/
+html {
+    font-size: 16px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 1%;
+}
+
+.inner {
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.navigation {
+    width: 100%;
+    background-color: black;
+}
+
+.left-nav {
+    width: 70%;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.logo img {
+    width: 140px;
+}
+
+.navbar {
+    width: 85%;
+    color: #fff;
+}
+
+ul li {
+    color: #fff;
+    ;
+    list-style: none;
+    font-size: 1rem;
+    margin-right: 40px;
+}
+
+.logo {
+    width: 5%;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.right-nav {
+    width: 30%;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.right-nav img {
+    width: 50%;
+    border-radius: 5px;
+}
+
+.fa {
+    color: #fff;
+    margin: 0 15px;
+    font-size: 1rem;
+
+}
+.banner{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    padding-top: 100px;
+}
+.banner h1{
+    font-size: 5rem;
+    background: linear-gradient(to right, rgb(231, 23, 58), rgb(46, 9, 180), rgb(201, 11, 128), rgb(231, 247, 9));
+
+   -webkit-text-fill-color: transparent;
+   -webkit-background-clip: text;
+}
+.banner h3{
+    font-size: 3rem;
+    margin-top: 20px;
+    letter-spacing: 3px;
+    font-weight: 300;
+    text-transform: capitalize;
+    
+}
+.banner .heading{
+    font-style: italic;
+    padding: 0px 20px;
+}
+.banner .banner-code{
+    font-size: 15rem;
+    font-weight: 900;
+}
+.banner-button{
+    justify-content: flex-start;
+    padding: 0;
+}
+.banner .btn{
+    padding: 12px 10px;
+    font-size: 1rem;
+    margin: 50px 10px 0 11 px;
+    color: black;
+    font-weight: 500;
+    border: none;
+    border-radius: 3px;
+    background-color: #fff;
+}
+.banner .btn1{
+    background-color: rgba(255,255,255,0.2);
+    color: #fff;
+}
+.play{
+    color: black;
+    margin: 0 5px;
+}
+.info{
+    color: #fff;
+}
+.video-container{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -6;
+    left: 0;
+    top: 0;
+}
+.video-container video{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+/* .color-overlay{
+    width: 100%;
+    height: 100vh;
+   background-color: rgb(168, 212, 212);
+    position: absolute;
+    top:0;
+    left: 0;
+    caption-side: 0.5;
+} */
+.carousel{
+    width: 93%;
+    position: absolute;
+    bottom:0;
+    overflow: hidden;
+    border-radius:20px ;
+    padding: 0 1%;
+}
+.carousel h3{
+    color: #fff;
+    font-size: 1.5rem;
+
+}
+.carousel-slider{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 150%;
+    height: 170px;
+    padding: 0 50px;
+}
+.carousel-list{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 50px;
+}
+.carousel-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px; /* Adjust the width as needed */
+    height: 160px; /* Increase the height as needed */
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 0 7px;
+    object-fit: cover; /* Use "cover" to maintain aspect ratio */
+    cursor: pointer;
+}
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.togglebtn {
+    /* display: none; */
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+}
+  
+  .carousel-item video {
+    width: 70vw;
+    height: 70vh;
+    border-radius: 5px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+  }
+  
+  .video-hidden {
+    display: none;
+  }
+  
+  .video-visible {
+    display: block;
+  }
+  
